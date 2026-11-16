@@ -339,10 +339,34 @@ section h2 {
 }
 .level h3 { margin: 0 0 .3rem; font-size: 1.05rem; }
 .level p { margin: 0; color: var(--ink-soft); font-size: .9rem; }
-.level:nth-child(1) .num { background: var(--teal-btn); color: #fff; }
-.level:nth-child(2) .num { background: var(--gold); }
-.level:nth-child(3) .num { background: var(--coral); color: #fff; }
-.level:nth-child(4) .num { background: var(--red); color: #fff; }
+.levels:not(.coming-levels) .level:nth-child(1) .num { background: var(--teal-btn); color: #fff; }
+.levels:not(.coming-levels) .level:nth-child(2) .num { background: var(--gold); }
+.levels:not(.coming-levels) .level:nth-child(3) .num { background: var(--coral); color: #fff; }
+.levels:not(.coming-levels) .level:nth-child(4) .num { background: var(--red); color: #fff; }
+
+.coming { margin-top: 1.8rem; }
+.coming-title {
+  font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+  letter-spacing: -.01em;
+  margin: 0 0 .4rem;
+  color: var(--ink-soft);
+  font-weight: 750;
+}
+.coming-lede { margin-bottom: 1rem; }
+.level-soon {
+  background: transparent;
+  border: 1.5px dashed rgba(26, 46, 44, 0.28);
+  box-shadow: none;
+  min-height: 0;
+  opacity: .9;
+}
+.level-soon .num {
+  background: transparent;
+  color: var(--ink-soft);
+  border: 1.5px dashed rgba(26, 46, 44, 0.4);
+  font-weight: 700;
+}
+.level-soon h3 { color: var(--ink-soft); font-weight: 700; }
 
 .note {
   margin: 1rem 0 0;
@@ -471,6 +495,7 @@ footer {
   .hero-brand img.icon { width: 96px; height: 96px; }
   .mascot { width: 84px; height: 84px; }
   .levels { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .coming-levels { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .features { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .wrap { padding: 3.4rem 1.5rem; }
   .tile-float { width: 58px; height: 58px; font-size: 1.9rem; }
