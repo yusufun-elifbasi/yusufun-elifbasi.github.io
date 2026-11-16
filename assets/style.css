@@ -418,6 +418,12 @@ section h2 {
   font-weight: 650;
   font-size: .9rem;
 }
+.pill-soon {
+  background: transparent;
+  color: var(--teal);
+  border: 1.5px dashed var(--teal);
+}
+
 
 /* Destek / footer */
 .destek {
