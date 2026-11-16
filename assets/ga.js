@@ -3,7 +3,7 @@
    Paste your Measurement ID below (Google Analytics → Admin → Data streams).
    The page will not load Google Analytics while this is still the placeholder.
    ============================================================================= */
-const GA_ID = 'G-XXXXXXXXXX';
+const GA_ID = 'G-2M1YC97NQQ';
 
 (function () {
   var isPlaceholder = !GA_ID || GA_ID.indexOf('XXXXXXXXXX') !== -1;
